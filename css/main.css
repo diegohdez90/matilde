@@ -1,0 +1,1767 @@
+
+
+
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('fonts/Raleway-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('fonts/Raleway-Medium.ttf');
+}
+
+@font-face{
+    font-family: 'Raleway-ExtraBold';
+    src: url('fonts/Raleway-ExtraBold.ttf');
+}
+
+
+/*
+body{
+    background-color: #ffF; 
+}*/
+/*------------------------------
+Home: Seleccion de Color
+------------------------------*/
+#home{
+	height: 100%;
+}
+
+.home-color {
+    float: left;
+}
+
+
+/*------------------------------
+Div de Pregunta de Seleccion
+------------------------------*/
+
+.color img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+/*------------------------------
+Image Parallax
+------------------------------*/
+#inicio, .parallax-window, .portada-turquesa, .portada-green, .portada-yellow, .portada-pink, .portada-orange {
+    min-height: 100%;
+    background: transparent;
+}
+
+.servimos, .amamos{
+	min-width: 100%;
+}
+
+/*------------------------------
+Navbar
+------------------------------*/
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   font-family: 'Raleway-Medium';
+   /*font-family: 'Raleway', sans-serif;*/
+   font-size: 12px;
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+
+
+.navbar-default .navbar-nav>li> .menu-turquesa, .navbar-default .navbar-nav>li> .menu-turquesa:visited{
+    color: #71cbd2;
+}
+
+.navbar-default .navbar-nav>li> .menu-turquesa:hover{    
+    color: #002D55;
+}
+
+.navbar-default .navbar-nav>li> .menu-green, .navbar-default .navbar-nav>li> .menu-green:visited{
+    color: #C1D42F;    
+}
+
+.navbar-default .navbar-nav>li> .menu-green:hover{
+    color: #002D55;
+}
+
+.navbar-default .navbar-nav>li> .menu-yellow, .navbar-default .navbar-nav>li> .menu-yellow:visited{
+    color: #FFDA00;  
+}
+
+.navbar-default .navbar-nav>li> .menu-yellow:hover{    
+    color: #002D55;
+}
+
+.navbar-default .navbar-nav>li> .menu-pink, .navbar-default .navbar-nav>li> .menu-pink:visited{    
+    color: #D51968;
+}
+
+.navbar-default .navbar-nav>li> .menu-pink:hover{ 
+    color: #002D55;
+}
+
+.navbar-default .navbar-nav>li> .menu-orange, .navbar-default .navbar-nav>li> .menu-orange:visited{
+    color: #F5821F; 
+}
+
+.navbar-default .navbar-nav>li> .menu-orange:hover{    
+    color: #002D55;
+}
+
+
+.navbar li { 
+	color: #000;
+}
+
+.menu-matilde li{
+	text-transform: uppercase;
+}
+
+.navbar-fixed-top {
+    top: 105%;
+}
+
+/*------------------------------
+Navbar Matilde
+------------------------------*/
+.nav-matilde {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
+	color: #fff;
+	position: fixed;
+	top: 0;
+    width: 100%;
+}
+
+.nav-matilde > li {
+    float: right;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.nav-matilde > li a {
+    display: block;
+	/*font-family: Raleway-Light;*/
+    font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-matilde > li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.nav-matilde > li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+/*------------------------------
+Parallax Nav
+------------------------------*/
+.nav-title{
+    font-family: 'Raleway-Medium';
+}
+
+.color-weight-light#parallax-nav ul li .turquesa, .color-weight-light#parallax-nav ul li .turquesa:visited{
+/*    background-color: rgb(113,203,210);*/
+    background: url('../img/circulo_relleno.png');
+}
+
+.color-weight-light#parallax-nav ul li.active .turquesa {
+/*    border: 2px solid rgb(113,203,210);
+    background-color: transparent;*/
+    background: url('../img/circulo_delineado.png');
+}
+
+.color-weight-light#parallax-nav ul li .green, .color-weight-light#parallax-nav ul li .green:visited{
+    background: url('../img/circulo-relleno_verde.png');
+}
+
+.color-weight-light#parallax-nav ul li.active .green {
+    background: url('../img/circulo-delineado_verde.png');
+}
+
+.color-weight-light#parallax-nav ul li .yellow, .color-weight-light#parallax-nav ul li .yellow:visited{
+    background: url('../img/circulo-relleno_amarillo.png');
+}
+
+.color-weight-light#parallax-nav ul li.active .yellow {
+    background: url('../img/circulo-delineado_amarillo.png');
+}
+
+.color-weight-light#parallax-nav ul li .pink, .color-weight-light#parallax-nav ul li .pink:visited{
+    background: url('../img/circulo-relleno_rosa.png');
+}
+
+.color-weight-light#parallax-nav ul li.active .pink  {
+    background: url('../img/circulo-delineado_rosa.png');
+}
+
+.color-weight-light#parallax-nav ul li .orange, .color-weight-light#parallax-nav ul li .orange:visited{
+    background: url('../img/circulo-relleno_naranja.png');
+}
+
+.color-weight-light#parallax-nav ul li.active .orange {
+    background: url('../img/circulo-delineado_naranja.png');
+}
+
+/*------------------------------
+Hola
+------------------------------*/
+.hola-image{
+	margin-bottom: 5%;
+	max-width: 100%;
+}
+
+/*------------------------------
+Inner Servimos
+------------------------------*/
+.inner-servimos{
+	position: absolute;
+	top: 50%;
+    left: 25%;
+    margin-right: 50%;
+}
+
+.flexslider .slides .inner-servimos{
+	width: 50%;
+}
+
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+.como-ayudamos-list > h2{
+	font-family: 'Raleway-Light';
+    /*font-family: 'Raleway', sans-serif;*/
+	font-size: 22px;
+	font-weight: 600;
+}
+
+
+/*------------------------------
+Filter de Seleccion de trabajos
+------------------------------*/
+.filter{
+    font-family: 'Raleway-Medium';
+    /*font-family: 'Raleway', sans-serif;*/
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/*------------------------------
+FlexSlider
+------------------------------*/
+
+.gallery{
+    position: relative;
+}
+
+.web{
+    /*margin: 0;*/
+   position: relative;
+   top: 14.5%;                         /* 3 */
+/*   transform: translate(0, -50%);*/
+}
+
+.flex-direction-nav a:before  { 
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 70px;
+}
+.flex-direction-nav a.flex-next:before  { 
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 70px;
+}
+
+.flex-direction-nav .turquesa-arrow:before  { 
+    background: url('../img/flecha-izq_turquesa.png') no-repeat;
+}
+.flex-direction-nav .turquesa-arrow.flex-next:before  { 
+    background: url('../img/flecha-der_turquesa.png') no-repeat;
+}
+
+.flex-direction-nav .green-arrow:before  { 
+    background: url('../img/flecha-izq_verde.png') no-repeat;
+}
+.flex-direction-nav .green-arrow.flex-next:before  { 
+    background: url('../img/flecha-der_verde.png') no-repeat;
+}
+
+.flex-direction-nav .yellow-arrow:before  { 
+    background: url('../img/flecha-izq_amarillo.png') no-repeat;
+}
+.flex-direction-nav .yellow-arrow.flex-next:before  { 
+    background: url('../img/flecha-der_amarillo.png') no-repeat;
+}
+
+.flex-direction-nav .pink-arrow:before  { 
+    background: url('../img/flecha-izq_rosa.png') no-repeat;
+}
+.flex-direction-nav .pink-arrow.flex-next:before  { 
+    background: url('../img/flecha-der_rosa.png') no-repeat;
+}
+
+.flex-direction-nav .orange-arrow:before  { 
+    background: url('../img/flecha-izq_naranja.png') no-repeat;
+}
+.flex-direction-nav .orange-arrow.flex-next:before  { 
+    background: url('../img/flecha-der_naranja.png') no-repeat;
+}
+
+.flex-direction-nav a { -webkit-transition: none; -moz-transition: none; transition: none; }
+.flexslider .flex-next, .flexslider .flex-prev { opacity: 1; }
+.flexslider .flex-prev { left: 10px; }
+.flexslider .flex-next { right: 10px; }
+
+
+
+.flexslider .slides .grafico {
+    width: 100%;
+    display: block; 
+}
+
+
+.slides li a{
+    margin-left: auto;
+}
+
+.ir a{
+    /*font-family: Raleway-Medium;*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.enlace-turquesa, .enlace-turquesa:visited{
+    color: #71cbd2;
+}
+
+.enlace-turquesa:hover{
+    color: #002D55;
+}
+
+.enlace-green, .enlace-green:visited{
+    color: #C1D42F;
+}
+
+.enlace-green:hover{
+    color: #002D55;
+}
+
+.enlace-yellow, .enlace-yellow:visited{
+    color: #F9CA26;
+}
+
+.enlace-yellow:hover{
+    color: #002D55;
+}
+
+.enlace-pink, .enlace-pink:visited{
+    color: #ef3586;
+}
+
+.enlace-pink:hover{
+    color: #002D55;
+}
+
+.enlace-orange, .enlace-orange:visited{
+    color: #F79321;
+}
+
+.enlace-orange:hover{
+    color: #002D55;
+}
+
+.flex-caption {
+    position:absolute;
+    left:42.5%;
+    right:0;
+    bottom:-3.5%;
+    background:transparent; /* whatever you want */    
+    z-index:1;
+    padding:5px;
+}
+
+/*------------------------------
+Filter Gallery
+------------------------------*/
+.filter-web, .filter-grafico{
+    cursor: pointer;
+}
+
+.turquesa-gallery > span{
+    color: #71cbd2;
+    font-weight: 600;
+}
+
+.turquesa-gallery > span:hover{
+    color: #002D55;
+    font-weight: 600;
+}
+
+.turquesa-gallery > .active{
+    color: #002D55;
+    font-weight: 600;
+}
+
+.green-gallery > span{
+    color: #C1D42F;
+    font-weight: 600;
+}
+
+.green-gallery > span:hover{
+    color: #002D55;
+    font-weight: 600;
+}
+
+.green-gallery > .active{
+    color: #002D55;
+    font-weight: 600;
+}
+
+.yellow-gallery > span{
+    color: #F9CA26;
+    font-weight: 600;
+}
+
+.yellow-gallery > span:hover{
+    color: #002D55;
+    font-weight: 600;
+}
+
+.yellow-gallery > .active{
+    color: #002D55;
+    font-weight: 600;
+}
+
+.pink-gallery > span{
+    color: #ef3586;
+    font-weight: 600;
+}
+
+.pink-gallery > span:hover{
+    color: #002D55;
+    font-weight: 600;
+}
+
+.pink-gallery > .active{
+    color: #002D55;
+    font-weight: 600;
+}
+
+.orange-gallery > span{
+    color: #F79321;
+    font-weight: 600;
+}
+
+.orange-gallery > span:hover{
+    color: #002D55;
+    font-weight: 600;
+}
+
+.orange-gallery > .active{
+    color: #002D55;
+    font-weight: 600;
+}
+
+/*------------------------------
+Formulario
+------------------------------*/
+button, input, select, textarea {
+    font-family: 'Raleway-Medium';
+}
+
+label{
+	/*font-family: Raleway-Medium;*/
+    font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+    font-weight: 400;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+}
+
+.enviar-row{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.enviar{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.send-turquesa, .send-turquesa:visited{
+    color:#002D55;
+}
+
+.send-green, .send-green:visited{
+    color:#002D55;
+}
+
+.send-yellow, .send-yellow:visited{
+    color:#002D55;
+}
+
+.send-pink, .send-pink:visited{
+    color:#002D55;
+}
+
+.send-orange, .send-orange:visited{
+    color:#002D55;
+}
+
+.send-turquesa:hover{
+    font-family: 'Raleway-ExtraBold';
+    color: #002D55;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.send-green:hover{
+    font-family: 'Raleway-ExtraBold';
+    color:#002D55;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.send-yellow:hover{
+    font-family: 'Raleway-ExtraBold';
+    color:#002D55;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.send-pink:hover{
+    font-family: 'Raleway-ExtraBold';
+    color:#002D55;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.send-orange:hover{
+    font-family: 'Raleway-ExtraBold';
+    color:#002D55;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.contacto img{
+    display: block;
+    margin-left: auto;
+}
+
+.facebook img{
+    display: block;
+    margin: 0 auto;
+}
+
+.instagram img{
+    display: block;
+    margin-right: auto;
+}
+
+/*------------------------------
+Media Query
+------------------------------*/
+@media screen and (max-width: 480px) and (orientation: portrait) {
+
+/*------------------------------
+ Parallax Nav
+------------------------------*/
+    #parallax-nav ul li.active a {
+        width: 13px;
+    }
+
+    img{
+    	max-width: 100%;
+    }
+/*    #home{
+    	height: auto;
+    }
+    section{
+    	height: auto;
+    }*/
+
+/*------------------------------
+Home Selector
+------------------------------*/
+    .home-color  a > img{
+        width: 18%;
+    }
+    .home-color a > img{
+        cursor: pointer;
+        top: -35px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .home-color  a > img:hover{
+        transform: translate(0,150px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+
+    .color{
+        margin-top: 100%;
+    }
+
+    .inner-image{
+        margin-top: 40%;
+    }   
+
+    .menu-matilde{
+        background-color: #fff;
+    }
+
+
+/*------------------------------
+Inner Image
+------------------------------*/
+    .menu-matilde{
+        background-color: #fff;
+    }
+
+    .inner-image{
+        margin-top: 10%;
+    }
+
+    .inner-flecha {
+        margin: auto;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .inner-ayudamos{
+        margin: auto;
+        display: block;
+        padding-top: 60%;
+        padding-bottom: 50%;
+    }
+
+    .inner-amamos {
+        margin: auto;
+        display: block;
+        padding-top: 60%;
+        padding-bottom: 50%;
+    }
+
+    .inner-grito {
+        margin: auto;
+        display: block;
+        padding-top: 60%;
+        padding-bottom: 50%;
+    }
+
+
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        padding: 20% 0;
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        line-height: 110%;
+    }
+}
+
+@media screen and (max-width: 480px) and (orientation: landscape) {
+    .home-color  a > img{
+        width: 18%;
+    }
+    .home-color a > img{
+        cursor: pointer;
+        top: -35px;
+        z-index: 99;
+        position: relative;
+    }
+    .home-color  a > img:hover{
+        transform: translate(0,50px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+
+    .color{
+        margin-top: 10%;
+    }
+
+    .inner-image{
+        max-width: 50%;
+    }
+
+    .menu-matilde{
+        background-color: #fff;
+    }
+
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        line-height: 110%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+    img{
+    	max-width: 100%;
+    }
+
+/*------------------------------
+ Parallax Nav
+------------------------------*/
+    #parallax-nav ul li.active a {
+        width: 13px;
+    }
+
+    /*#home{
+    	height: auto;
+    }
+    section{
+    	height: auto;
+    }*/
+
+/*------------------------------
+Home Selector
+------------------------------*/
+    .home-color  a > img{
+        width: 19%;
+    }
+    .home-color a > img{
+        cursor: pointer;
+        top: -80px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .home-color  a > img:hover{
+        transform: translate(0,150px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+
+    .color{
+        margin-top: 75%;
+    }
+
+/*------------------------------
+Inner Image
+------------------------------*/
+    .menu-matilde{
+        background-color: #fff;
+    }
+
+    .inner-image{
+        margin-top: 10%;
+    }
+
+    .inner-flecha {
+        margin: auto;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .inner-ayudamos{
+        margin: auto;
+        display: block;
+        padding-top: 60%;
+        padding-bottom: 40%;
+    }
+
+    .inner-amamos {
+        margin: auto;
+        display: block;
+        padding-top: 60%;
+        padding-bottom: 40%;
+    }
+
+    .inner-grito {
+        margin: auto;
+        display: block;
+        padding-top: 60%;
+        padding-bottom: 40%;
+    }
+
+
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        /*padding: 25% 0;*/
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        /*padding: 1% 20%;*/
+        line-height: 110%;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape){
+    .home-color  a > img{
+        width: 18%;
+    }
+    .home-color a > img{
+        cursor: pointer;
+        top: -35px;
+        z-index: 99;
+        position: relative;
+    }
+    .home-color  a > img:hover{
+        transform: translate(0,50px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+
+    .color{
+        margin-top: 10%;
+    }
+
+    .menu-matilde{
+        background-color: #fff;
+    }
+    
+    .inner-image{
+        max-width: 50%;
+        margin-top: 0;
+    }   
+
+
+
+/*------------------------------
+Inner Image
+------------------------------*/
+    .inner-flecha {
+        margin: auto;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .inner-ayudamos{
+        margin: auto;
+        display: block;
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+
+    .inner-amamos {
+        margin: auto;
+        display: block;
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+
+    .inner-grito {
+        margin: auto;
+        display: block;
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+
+
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        /*padding: 25% 0;*/
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        /*padding: 1% 20%;*/
+        line-height: 110%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 989px) and (orientation: portrait) {
+/*------------------------------
+Home Selector
+------------------------------*/
+    .home-color  a > img{
+        width: 19%;
+    }
+    
+    .home-color a > img{
+        cursor: pointer;
+        top: -100px;
+        z-index: 99;
+        position: relative;
+    }
+    
+    .home-color  a > img:hover{
+        transform: translate(0,150px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+
+    .color{
+        margin-top: 75%;
+    }
+
+/*------------------------------
+Nav
+------------------------------*/
+    .navbar-right {
+        float: right!important;
+        margin-right: 0;
+    }
+
+
+/*------------------------------
+ Parallax Nav
+------------------------------*/
+    #parallax-nav ul li.active a {
+        width: 13px;
+    }
+
+/*------------------------------
+Inner Image
+------------------------------*/
+
+
+    .inner-flecha {
+        margin: auto;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .inner-ayudamos{
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 40%;
+    }
+
+    .inner-amamos {
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 40%;
+    }
+
+    .inner-grito {
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 40%;
+    }
+
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        padding: 25% 0;
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        padding: 1% 20%;
+        line-height: 110%;
+        /*font-weight: 600;*/
+    }
+
+}
+
+
+
+@media screen  and (min-width: 768px) and (max-width: 989px) and (orientation:landscape){
+
+    .home-color  a > img:hover{
+        transform: translate(0,50px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+
+    .color{
+        margin-top: 10%;
+    }
+
+    .inner-image{
+        width: 50%;
+    }
+
+
+/*------------------------------
+Inner Image
+------------------------------*/
+    .inner-flecha {
+        margin: auto;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .inner-ayudamos{
+        margin: auto;
+        display: block;
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+
+    .inner-amamos {
+        margin: auto;
+        display: block;
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+
+    .inner-grito {
+        margin: auto;
+        display: block;
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        padding: 7% 0;
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        padding: 1% 2%;
+        line-height: 110%;
+        /*font-weight: 600;*/
+    }
+}
+
+
+
+
+@media (min-width: 990px) and (max-width: 1023px) and (orientation: portrait){
+
+/*------------------------------
+Home Selector
+------------------------------*/
+    .home-color  a > img{
+        width: 19%;
+    }
+    .color{
+        margin-top: 55%;
+    }
+
+    .home-color  a > img:hover{
+        transform: translate(0,150px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+    
+    .home-color a > img{
+        cursor: pointer;
+        top: -140px;
+        z-index: 99;
+        position: relative;
+    }
+
+/*------------------------------
+Nav
+------------------------------*/
+    .navbar-right {
+        float: right!important;
+        margin-right: 0;
+    }
+
+/*------------------------------
+ Parallax Nav
+------------------------------*/
+    #parallax-nav ul li.active a {
+        width: 13px;
+    }
+
+/*------------------------------
+Inner Image
+------------------------------*/
+    .inner-flecha {
+        margin: auto;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .inner-ayudamos{
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 25%;
+    }
+
+    .inner-amamos {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 25%;
+    }
+
+    .inner-grito {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 25%;
+    }
+
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        padding: 22% 0;
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        padding: 1% 20%;
+        line-height: 110%;
+        /*font-weight: 600;*/
+    }
+
+
+}
+
+@media (min-width: 990px) and (max-width: 1023px) and (orientation: landscape){
+/*------------------------------
+Inner Image
+------------------------------*/
+    .inner-flecha {
+        margin: auto;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .inner-ayudamos{
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 15%;
+    }
+
+    .inner-amamos {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 15%;
+    }
+
+    .inner-grito {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 15%;
+    }
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        padding: 1% 20%;
+        line-height: 110%;
+        /*font-weight: 600;*/
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1199px){
+
+
+/*------------------------------
+Home Selector
+------------------------------*/
+    .home-color  a > img{
+        width: 19%;
+    }
+
+    .home-color a > img{
+        cursor: pointer;
+        top: -140px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .home-color  a > img:hover{
+        transform: translate(0,150px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+
+    .color{
+        margin-top: 55%;
+    }
+
+/*------------------------------
+ Parallax Nav
+------------------------------*/
+    #parallax-nav ul li.active a {
+        width: 13px;
+    }
+    
+/*------------------------------
+Inner Image
+------------------------------*/
+    .navbar-right {
+        float: right!important;
+        margin-right: 0;
+    }
+
+    .inner-image {
+        margin-top: 10%;
+        max-width: 40%;
+    }
+
+    .inner-flecha {
+        margin: auto;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .inner-ayudamos{
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 25%;
+    }
+
+    .inner-amamos {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 25%;
+    }
+
+    .inner-grito {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 25%;
+    }
+
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        padding: 12.5% 0;
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        padding: 1% 20%;
+        line-height: 110%;
+        /*font-weight: 600;*/
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1599px){
+/*------------------------------
+Home Selector
+------------------------------*/
+    .home-color a > img{
+        cursor: pointer;
+        top: -140px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .home-color  a > img:hover{
+        transform: translate(0,150px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+
+    .color{
+        margin-top: 6%;
+    }
+
+
+/*------------------------------
+ Parallax Nav
+------------------------------*/
+    #parallax-nav ul li.active a {
+        width: 13px;
+    }
+    
+
+/*------------------------------
+Nav
+------------------------------*/
+    .navbar-right {
+        float: right!important;
+        margin-right: 0;
+    }
+
+/*------------------------------
+Inner Image
+------------------------------*/
+
+    .inner-image {
+        margin-top: 10%;
+        max-width: 40%;
+/*        position: static;
+        margin-left: auto;
+        margin-top: auto;
+        width: 15%;*/
+    }
+
+    .inner-image-flecha {
+/*        position: static;*/
+        margin: auto;
+    }
+
+
+    .inner-flecha {
+        margin: auto;
+        display: block;
+    }
+
+    .inner-ayudamos{
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 20%;
+    }
+
+    .inner-amamos {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 20%;
+    }
+
+    .inner-grito {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 20%;
+    }
+
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        padding: 1% 25%;
+        line-height: 110%;
+        /*font-weight: 600;*/
+    }
+
+
+}
+
+
+
+
+
+@media (min-width: 1600px) and  (max-width: 1899px){
+/*------------------------------
+Home Selector
+------------------------------*/
+    .home-color a > img{
+        cursor: pointer;
+        top: -140px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .home-color  a > img:hover{
+        transform: translate(0,150px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+
+    .color{
+        margin-top: 6%;
+    }
+
+/*------------------------------
+ Parallax Nav
+------------------------------*/
+    #parallax-nav ul li.active a {
+        width: 13px;
+    }
+    
+
+/*------------------------------
+Nav
+------------------------------*/
+    .navbar-right {
+        float: right!important;
+        margin-right: 0;
+    }
+
+/*------------------------------
+Inner Image
+------------------------------*/
+
+    .inner-image {
+        margin-top: 10%;
+        max-width: 45%;
+    }
+
+    .inner-image-flecha {
+        margin: auto;
+    }
+
+
+    .inner-flecha {
+        margin: auto;
+        display: block;
+    }
+
+    .inner-ayudamos{
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 20%;
+    }
+
+    .inner-amamos {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 20%;
+    }
+
+    .inner-grito {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 20%;
+    }    
+
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        padding: 1% 25%;
+        line-height: 110%;
+        /*font-weight: 600;*/
+    }
+}
+
+
+@media (min-width: 1900px){
+/*------------------------------
+Home Selector
+------------------------------*/
+    .home-color a > img{
+        cursor: pointer;
+        top: -140px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .home-color  a > img:hover{
+        transform: translate(0,150px);
+        -webkit-transition-duration: 6s; 
+        transition-duration: 3s;
+    }
+
+    .color{
+        margin-top: 17%;
+    }
+/*------------------------------
+ Parallax Nav
+------------------------------*/
+    #parallax-nav ul li.active a {
+        width: 13px;
+    }
+    
+/*------------------------------
+Nav
+------------------------------*/
+    .navbar-right {
+        float: right!important;
+        margin-right: 0;
+    }
+
+/*------------------------------
+Inner Image
+------------------------------*/
+
+    .inner-image {
+        margin-top: 20%;
+        max-width: 50%;
+    }
+
+    .inner-image-flecha {
+        margin: auto;
+    }
+
+
+    .inner-flecha {
+        margin: auto;
+        display: block;
+    }
+
+    .inner-ayudamos{
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+
+    .inner-amamos {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+
+    .inner-grito {
+        margin: auto;
+        display: block;
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }    
+
+/*------------------------------
+Hola
+------------------------------*/
+    .hola-section {
+        min-height: 100%;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    .hola-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        padding: 1% 25%;
+        line-height: 110%;
+        /*font-weight: 600;*/
+    }
+
+}
+
+
+@media screen and (min-height: 1000px) and (max-height: 1099px){
+    .inner-flecha {
+        padding-top: 10%;
+        margin: auto;
+        display: block;
+    }
+
+    .inner-ayudamos{
+        padding-top: 40%;
+        padding-bottom: 20%;
+    }
+
+    .inner-amamos {
+        padding-top: 40%;
+        padding-bottom: 20%;
+    }
+
+    .inner-grito {
+        padding-top: 40%;
+        padding-bottom: 20%;
+    } 
+}
+
+@media screen and (min-height: 1100px) and (max-height: 1299px){
+    .inner-flecha {
+        padding-top: 12%;
+        margin: auto;
+        display: block;
+    }
+
+    .inner-ayudamos{
+        padding-top: 40%;
+    }
+
+    .inner-amamos {
+        padding-top: 40%;
+    }
+
+    .inner-grito {
+        padding-top: 40%;
+    } 
+}
+
+
+@media screen and (min-height: 1300px) and (max-height: 1499px){
+    .inner-flecha {
+        padding-top: 20%;
+        margin: auto;
+        display: block;
+    }
+
+    .inner-ayudamos{
+        padding-top: 45%;
+    }
+
+    .inner-amamos {
+        padding-top: 45%;
+    }
+
+    .inner-grito {
+        padding-top: 45%;
+    } 
+}
+
+
+@media screen and (min-height: 1500px){
+    .inner-flecha {
+        padding-top: 20%;
+        margin: auto;
+        display: block;
+    }
+
+    .inner-ayudamos{
+        padding-top: 61%;
+    }
+
+    .inner-amamos {
+        padding-top: 61%;
+    }
+
+    .inner-grito {
+        padding-top: 61%;
+    } 
+}
+
+@media screen and (min-height: 625px) and (max-height: 796px) and (min-width: 1200px) and (max-width: 1400px){
+    .inner-flecha {
+        padding-top: 2%;
+        margin: auto;
+        display: block;
+    }
+
+    .inner-ayudamos{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .inner-amamos {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .inner-grito {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    } 
+}
+
+@media screen and ( max-height: 624px) and (min-width: 1200px) and (max-width: 1400px){
+    .color{
+        margin-top: 2%;
+    }
+
+    .inner-flecha {
+        margin: auto;
+        display: block;
+    }
+
+    .inner-ayudamos{
+        padding-top: 20%;
+    }
+
+    .inner-amamos {
+        padding-top: 20%;
+    }
+
+    .inner-grito {
+        padding-top: 20%;
+    } 
+}
+
+
+
