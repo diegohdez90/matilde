@@ -226,9 +226,7 @@
   var reloadHome = function(number) {
   	carga = -1;
   	localStorage.setItem('color',JSON.stringify(number));
-	localStorage.setItem('carga',JSON.stringify(carga));
-
-//  	location.hash = 'inicio';
+  	localStorage.setItem('carga',JSON.stringify(carga));
   	location.reload();
   };
 
