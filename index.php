@@ -31,13 +31,6 @@
     <div id="home">
       <div class="container">
             <div class="col-lg-12 home-color">
-                <!--<ul class="home-color">
-                  <li><a class="page-scroll" href="#inicio"> <img class="turquesa" src="img/turquesa.jpg" onclick="removeHome(1);"></a></li>
-                  <li><a class="page-scroll" href="#inicio"> <img class="verde" src="img/verde.jpg" onclick="removeHome(2);"></a></li>
-                  <li><a class="page-scroll" href="#inicio"> <img class="amarillo" src="img/amarillo.jpg" onclick="removeHome(3);"></a></li>
-                  <li><a class="page-scroll" href="#inicio"> <img class="rosa" src="img/rosa.jpg" onclick="removeHome(4);"></a></li>
-                  <li><a class="page-scroll" href="#inicio"> <img class="naranja" src="img/naranja.jpg" onclick="removeHome(5);"></a></li>
-                </ul>-->
                 <!--onclick="removeHome(1);"-->
                 <!--class="page-scroll" -->
                 <a href=""> <img src="img/turquesa.jpg" onclick="reloadHome(1)" class="parallax-turquesa" alt="Turquesa"></a>
@@ -264,10 +257,3 @@
     <footer></footer>
 </body>
 </html>
-<script>
-</script>
-
-
-<script type="text/javascript">
-
-</script>
