@@ -900,6 +900,7 @@ Inner Image
     }
 
     .inner-ayudamos{
+        width: 100%;
         margin: auto;
         display: block;
         padding-top: 20%;
@@ -907,6 +908,7 @@ Inner Image
     }
 
     .inner-amamos {
+        width: 100%;
         margin: auto;
         display: block;
         padding-top: 20%;
@@ -914,6 +916,7 @@ Inner Image
     }
 
     .inner-grito {
+        width: 100%;
         margin: auto;
         display: block;
         padding-top: 20%;
