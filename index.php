@@ -40,11 +40,11 @@
                 </ul>-->
                 <!--onclick="removeHome(1);"-->
                 <!--class="page-scroll" -->
-                <a href="#inicio"> <img src="img/turquesa.jpg" onclick="reloadHome(1)" class="parallax-turquesa" alt="Turquesa"></a>
-                <a href="#inicio" > <img src="img/verde.jpg" onclick="reloadHome(2)" class="parallax-verde" alt="Verde"></a>
-                <a href="#inicio" > <img  src="img/amarillo.jpg" onclick="reloadHome(3)" class="parallax-amarillo" alt="Amarillo"></a>
-                <a href="#inicio"> <img class="parallax-rosa" src="img/rosa.jpg" onclick="reloadHome(4);" alt="Rosa"></a>
-                <a href="#inicio"> <img class="parallax-naranja" src="img/naranja.jpg" onclick="reloadHome(5);" alt="Naranja"></a>
+                <a href=""> <img src="img/turquesa.jpg" onclick="reloadHome(1)" class="parallax-turquesa" alt="Turquesa"></a>
+                <a href="" > <img src="img/verde.jpg" onclick="reloadHome(2)" class="parallax-verde" alt="Verde"></a>
+                <a href="" > <img  src="img/amarillo.jpg" onclick="reloadHome(3)" class="parallax-amarillo" alt="Amarillo"></a>
+                <a href=""> <img class="parallax-rosa" src="img/rosa.jpg" onclick="reloadHome(4);" alt="Rosa"></a>
+                <a href=""> <img class="parallax-naranja" src="img/naranja.jpg" onclick="reloadHome(5);" alt="Naranja"></a>
             </div>
           <div class="col-lg-12 color">
             <img src="img/color.jpg">

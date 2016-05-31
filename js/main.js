@@ -1,7 +1,7 @@
 
 
   var color;
-
+  var carga;
 
 
 
@@ -175,7 +175,7 @@
 
           $('.contacto').html('<a href="mailto:contacto@matilde.com.mx"><img src="img/contacto_naranja.png" alt="contacto"></a>');
           $('.facebook').html('<a href="https://www.facebook.com/matildedesignstudio/?fref=ts" target="_blank"><img src="img/fb_naranja.png" alt="fb"></a>');
-          $('.instagram').html('<a href="https://www.instagram.com/matildedesignstudio/" target="_blank"><img src="img/instagram_naranja.png" alt="instragram"></a>');
+          $('.instagram').html('<a href="https://www.instagram.com/matildedesignstudio/" target="_blank"><img src="img/instagram_naranja.png" alt="instagram"></a>');
 
           break;
       default:
@@ -210,18 +210,25 @@
           $('textarea, input').css('color','#002D55');//
           $('.enviar').removeClass('send-green send-yellow send-pink send-orange').addClass('send-turquesa');
           $('.enviar').css('color','#002D55')
-          $('.contacto').html('<a href="mailto:contacto@matilde.com.mx"><img src="img/contacto_turquesa.jpg"></a>');
-          $('.facebook').html('<a href="https://www.facebook.com/matildedesignstudio/?fref=ts" target="_blank"><img src="img/fb_turquesa.jpg"></a>');
-          $('.instagram').html('<a href="https://www.instagram.com/matildedesignstudio/" target="_blank"><img src="img/instagram_turquesa.jpg"></a>');
+          $('.contacto').html('<a href="mailto:contacto@matilde.com.mx"><img src="img/contacto_turquesa.jpg" alt="contacto"></a>');
+          $('.facebook').html('<a href="https://www.facebook.com/matildedesignstudio/?fref=ts" target="_blank"><img src="img/fb_turquesa.jpg" alt="fb"></a>');
+          $('.instagram').html('<a href="https://www.instagram.com/matildedesignstudio/" target="_blank"><img src="img/instagram_turquesa.jpg" alt="instagram"></a>');
 
 
     }
   };
 
+  function removeCarga() {
+    localStorage.removeItem('carga');
+  }
 
 
   var reloadHome = function(number) {
+  	carga = -1;
   	localStorage.setItem('color',JSON.stringify(number));
+	localStorage.setItem('carga',JSON.stringify(carga));
+
+//  	location.hash = 'inicio';
   	location.reload();
   };
 
@@ -236,6 +243,15 @@
       return color;
 	}
 
+	function loadCarga () {
+      try{
+          carga = JSON.parse(localStorage.getItem('carga')) || 1;
+          
+      } catch (err) {
+          carga = 1;
+      } 
+      return carga;
+	}
 
 $(document).ready(function(){
 
@@ -251,6 +267,26 @@ $(document).ready(function(){
 	var c = loadPortada();
 
 	removeHome(c);
+
+	var primeravez;
+
+	primeravez = loadCarga();
+
+
+	if(primeravez==1){
+		$(window).on('beforeunload', function() {
+	    	$(window).scrollTop(0);
+		});
+	}else{
+		$(window).ready(function() {
+			$('html, body').animate({
+	        scrollTop: $("#inicio").offset().top}, 2000);
+		});
+    removeCarga();
+	}
+
+
+
 
 
     if(c==1){
@@ -288,19 +324,16 @@ $(document).ready(function(){
     	$('#echanos-un-grito').parallax({imageSrc:'img/grito_naranja.jpg'})
     }
 
-/*
-	$(window).on('beforeunload', function() {
-	    $(window).scrollTop(0);
-	});
 
-*/
+
+
 	$('.flexslider').flexslider({
 		controlNav: false,
 		slideshow: false,
 		keyboard: false
 	});
 
-
+	$('#parallax-nav').hide();
 
 
 
@@ -477,8 +510,8 @@ $(document).ready(function(){
 		$('.gallery').height(h);
 	});
 
-    $('html, body').animate({
-        scrollTop: $("#inicio").offset().top}, 2000);
+
+
 
 });
 
