@@ -49,20 +49,19 @@
          $('#inicio').parallax({imageSrc:'img/portada_verde.jpg'});
 
           $('.inner-image').attr('src','img/logo-solo_verde.png');
-		  $('.inner-image-flecha').attr('src','img/flecha-abajo-amarino.png');//
+		      $('.inner-image-flecha').attr('src','img/flecha-abajo-amarino.png');//
           $('.inner-flecha').attr('src','img/flecha-abajo_verde.png');
-
-          $('.portada-green').parallax({imageSrc:'img/servimos_turquesa.jpg'});
-          $('#parallax-nav ul li a').removeClass('turquesa yellow pink orange').addClass('green');
 
           $('.nav-title').css('color','#C1D42F');
           $('.navbar-default .navbar-nav>li>a').removeClass('menu-turquesa menu-yellow menu-pink menu-orange').addClass('menu-green');
 
           $('.hola-image').attr('src','img/hola-matilde_verde.jpg');
-          
-          $('.como-ayudamos-list > h2:nth-child(even)').css('color','#C1D42F');
-          
+          $('.hola-p').css('color','#002D55');//
 
+          $('.como-ayudamos-list > h2:nth-child(even)').css('color','#C1D42F');
+          $('.como-ayudamos-list > h2:nth-child(odd)').css('color','#002D55');//
+
+          $('#parallax-nav ul li a').removeClass('turquesa yellow pink orange').addClass('green');
           $('.flex-direction-nav a').removeClass('turquesa-arrow yellow-arrow pink-arrow orange-arrow').addClass('green-arrow');
 
           $('.filter-web, .filter-grafico').parent().removeClass('turquesa-gallery yellow-gallery pink-gallery orange-gallery').addClass('green-gallery');
@@ -70,9 +69,12 @@
           $('.ir a').removeClass('enlace-turquesa enlace-yellow enlace-pink enlace-orange').addClass('enlace-green');
 
           $('.enviar').removeClass('send-turquesa send-yellow send-pink send-orange').addClass('send-green');
+          $('.enviar').css('color','#002D55')
 
+          $('label').css('color','#002D55')//
           $('textarea, input[type="text"], input[type="tel"], input[type="email"]').css({'border':'none','background-color':'rgba(193, 212, 47,0.3)'});
-
+          $('textarea, input').css('color','#002D55');//
+      
           $('.contacto').html('<a href="mailto:contacto@matilde.com.mx"><img src="img/contacto_verde.jpg" alt="contacto"></a>');
           $('.facebook').html('<a href="https://www.facebook.com/matildedesignstudio/?fref=ts" target="_blank"><img src="img/fb_verde.jpg" alt="fb"></a>');
           $('.instagram').html('<a href="https://www.instagram.com/matildedesignstudio/" target="_blank"><img src="img/instagram_verde.jpg" alt="instragram"></a>');
@@ -85,7 +87,7 @@
 
           $('.inner-image').attr('src','img/logo_amarillo.jpg');
           $('.inner-flecha').attr('src','img/flecha-abajo_amarillo.png');
-		  $('.inner-image-flecha').attr('src','img/flecha-abajo-amarino.png');//
+		      $('.inner-image-flecha').attr('src','img/flecha-abajo-amarino.png');//
 
           $('#parallax-nav ul li a').removeClass('turquesa green pink orange').addClass('yellow');
 
@@ -93,8 +95,10 @@
           $('.navbar-default .navbar-nav>li>a').removeClass('menu-turquesa menu-green menu-pink menu-orange').addClass('menu-yellow');
 
           $('.hola-image').attr('src','img/hola-matilde_amarillo.jpg');
-          
+          $('.hola-p').css('color','#002D55');//
+
           $('.como-ayudamos-list > h2:nth-child(even)').css('color','#FFDA00');
+          $('.como-ayudamos-list > h2:nth-child(odd)').css('color','#002D55');//
 
           $('.flex-direction-nav a').removeClass('turquesa-arrow green-arrow pink-arrow orange-arrow').addClass('yellow-arrow');
 
@@ -103,8 +107,13 @@
           $('.ir a').removeClass('enlace-turquesa enlace-green enlace-pink enlace-orange').addClass('enlace-yellow');
 
           $('.enviar').removeClass('send-turquesa send-green send-pink send-orange').addClass('send-yellow');
-          $('textarea, input[type="text"], input[type="tel"], input[type="email"]').css({'border':'none','background-color':'rgba(255, 218, 0,0.3)'});
+          $('.enviar').css('color','#002D55');
 
+          $('label').css('color','#002D55');//
+          
+          $('textarea, input[type="text"], input[type="tel"], input[type="email"]').css({'border':'none','background-color':'rgba(255, 218, 0,0.3)'});
+          $('textarea, input').css('color','#002D55');//
+      
           $('.contacto').html('<a href="mailto:contacto@matilde.com.mx"><img src="img/contacto_amarillo.jpg" alt="contacto"></a>');
           $('.facebook').html('<a href="https://www.facebook.com/matildedesignstudio/?fref=ts" target="_blank"><img src="img/fb_amarillo.jpg" alt=fb></a>');
           $('.instagram').html('<a href="https://www.instagram.com/matildedesignstudio/" target="_blank"><img src="img/instagram_amarillo.jpg" alt="instagram"></a>');
@@ -115,8 +124,7 @@
           $('#inicio').parallax({imageSrc:'img/portada_rosa.jpg'});
 
           $('.inner-image').attr('src','img/logo-solo_rosa.jpg');
-		  $('.inner-image-flecha').attr('src','img/flecha-abajo-amarino.png');//
-
+		      $('.inner-image-flecha').attr('src','img/flecha-abajo-amarino.png');//
           $('.inner-flecha').attr('src','img/flecha-abajo_rosa.png');
 
           $('#parallax-nav ul li a').removeClass('turquesa green yellow orange').addClass('pink');
@@ -125,18 +133,25 @@
           $('.navbar-default .navbar-nav>li>a').removeClass('menu-turquesa menu-green menu-yellow menu-orange').addClass('menu-pink');
 
           $('.hola-image').attr('src','img/hola-matilde_rosa.jpg');
+          $('.hola-p').css('color','#002D55');//
 
           $('.como-ayudamos-list > h2:nth-child(even)').css('color','#D51968');
+          $('.como-ayudamos-list > h2:nth-child(odd)').css('color','#002D55');//
+
 
           $('.flex-direction-nav a').removeClass('turquesa-arrow green-arrow yellow-arrow orange-arrow').addClass('pink-arrow');
 
           $('.filter-web, .filter-grafico').parent().removeClass('turquesa-gallery yellow-gallery green-gallery-gallery orange-gallery').addClass('pink-gallery');
 
-          $('.enviar').removeClass('send-turquesa send-green send-yellow send-orange').addClass('send-pink');
 
           $('.ir a').removeClass('enlace-turquesa enlace-green enlace-yellow enlace-orange').addClass('enlace-pink');
 
+          $('label').css('color','#002D55');//
+
           $('textarea, input[type="text"], input[type="tel"], input[type="email"]').css({'border':'none','background-color':'rgba(213, 25, 104,0.3)'});
+          $('textarea, input').css('color','#002D55');//
+          $('.enviar').removeClass('send-turquesa send-green send-yellow send-orange').addClass('send-pink');
+          $('.enviar').css('color','#002D55');
 
           $('.contacto').html('<a href="mailto:contacto@matilde.com.mx"><img src="img/contacto_rosa.jpg" alt="contacto"></a>');
           $('.facebook').html('<a href="https://www.facebook.com/matildedesignstudio/?fref=ts" target="_blank"><img src="img/fb_rosa.jpg" alt="fb"></a>');
@@ -151,7 +166,7 @@
 
 
           $('.inner-image').attr('src','img/logo_naranja.png');
-		  $('.inner-image-flecha').attr('src','img/flecha-abajo-amarino.png');//
+		      $('.inner-image-flecha').attr('src','img/flecha-abajo-amarino.png');//
           $('.inner-flecha').attr('src','img/flecha-abajo_naranja.png');
 
           $('#parallax-nav ul li a').removeClass('turquesa green yellow pink').addClass('orange');
@@ -160,8 +175,10 @@
           $('.navbar-default .navbar-nav>li>a').removeClass('menu-turquesa menu-green menu-yellow menu-pink').addClass('menu-orange');
 
           $('.hola-image').attr('src','img/hola-matilde_naranja.jpg');
+          $('.hola-p').css('color','#002D55');//
 
           $('.como-ayudamos-list > h2:nth-child(even)').css('color','#F5821F');
+          $('.como-ayudamos-list > h2:nth-child(odd)').css('color','#002D55');//
 
           $('.flex-direction-nav a').removeClass('turquesa-arrow green-arrow yellow-arrow pink-arrow').addClass('orange-arrow');
 
@@ -169,9 +186,14 @@
 
           $('.ir a').removeClass('enlace-turquesa enlace-green enlace-yellow enlace-pink').addClass('enlace-orange');
 
-          $('.enviar').removeClass('send-turquesa send-green send-yellow send-pink').addClass('send-orange');
+          $('label').css('color','#002D55');//
+
 
           $('textarea, input[type="text"], input[type="tel"], input[type="email"]').css({'border':'none','background-color':'rgba(245, 130, 31,0.3)'});
+          $('textarea, input').css('color','#002D55');//
+
+          $('.enviar').removeClass('send-turquesa send-green send-yellow send-pink').addClass('send-orange');
+          $('.enviar').css('color','#002D55');
 
           $('.contacto').html('<a href="mailto:contacto@matilde.com.mx"><img src="img/contacto_naranja.png" alt="contacto"></a>');
           $('.facebook').html('<a href="https://www.facebook.com/matildedesignstudio/?fref=ts" target="_blank"><img src="img/fb_naranja.png" alt="fb"></a>');
@@ -180,6 +202,7 @@
           break;
       default:
           
+         $('#inicio').parallax({imageSrc:'img/portada_turquesa.jpg'});
   
           $('.inner-image').attr('src','img/logo-solo.png');
           $('.inner-image-flecha').attr('src','img/flecha-abajo-amarino.png');//
