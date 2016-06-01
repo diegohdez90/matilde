@@ -163,7 +163,7 @@
                     <img class="hola-image" alt="Hola">
                     <p class="hola-p">Somos un estudio de diseño y comunicación visual donde conjugamos como equipo, nuestras mejores cualidades creativas.</p>
                     <p class="hola-p">Cada día comprobamos más que trabajamos en lo que más nos gusta hacer... el diseño.
-                    <p class="hola-p">Nos esforzamos por dar un servicio rápido, conciso y con atención personalizada. Dando resultados creativos y originales, logrando hacer de esto la mejor de las experiencias.</p>
+                    <p class="hola-p">Nos esforzamos por dar un servicio rápido, conciso y con atención personalizada. Dando resultados creativos y originales, logrando hacer de esto la mejor<br> de las experiencias.</p>
                 </div>
             </div>
         </div>

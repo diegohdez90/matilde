@@ -294,7 +294,7 @@ if($(window).width()>640){
 
   var c = loadPortada();
 
-  removeHome(c);
+  removeHome(c,-1);
 
   var primeravez;
 
