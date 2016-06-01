@@ -585,7 +585,7 @@ else{
                         '<p class="text-right ir"><a target="_blank" href="http://grupociima.com/ciimasustentable.html">échale un vistazo</a></p>'+
                         '<img class="web espacio" src="img/web17.jpg" alt="web17">'+
                         '<img class="web espacio" src="img/web18.jpg" alt="web18">');
-  if($(window).width()<600){
+  if($(window).width()<500){
     removeHome(1,1)    
   }
   else{

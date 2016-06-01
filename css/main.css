@@ -719,7 +719,7 @@ Lista de Trabajos
 Enlace
 ------------------------------*/
     .espacio{
-        margin-bottom: 8%;
+        margin-bottom: 9%;
     }
 
     .ir a{
@@ -821,7 +821,7 @@ Enlace
     }
 
     .espacio{
-        margin-bottom: 8%;
+        margin-bottom: 6%;
     }
 
     .ir{
@@ -961,7 +961,7 @@ Lista de Trabajos
 Enlace
 ------------------------------*/
     .espacio{
-        margin-bottom: 8%;
+        margin-bottom: 9%;
     }
 
     .ir a{
@@ -1096,7 +1096,7 @@ Lista de Trabajos
 Enlace
 ------------------------------*/
     .espacio{
-        margin-bottom: 8%;
+        margin-bottom: 6%;
     }
 
     .ir a{
@@ -1264,6 +1264,16 @@ Enlace
 
 @media screen  and (min-width: 768px) and (max-width: 989px) and (orientation:landscape){
 
+    .home-color  a > img{
+        width: 18%;
+    }
+    .home-color a > img{
+        cursor: pointer;
+        top: -35px;
+        z-index: 99;
+        position: relative;
+    }
+    
     .home-color  a > img:hover{
         transform: translate(0,50px);
         -webkit-transition-duration: 6s; 
