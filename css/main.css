@@ -60,6 +60,27 @@ Image Parallax
 /*------------------------------
 Navbar
 ------------------------------*/
+.navbar-toggle{
+    background-color: #71cbd2;    
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    border-color: #71cbd2;
+    background-color: #71cbd2;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #eee;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: rgba(113, 203, 210,0.3);
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+    color: #002D55;
+}
+
 .navbar {
    background-color: transparent;
    background: transparent;
@@ -121,10 +142,10 @@ Navbar
 	text-transform: uppercase;
 }
 
-.navbar-fixed-top {
+/*.navbar-fixed-top {
     top: 105%;
 }
-
+*/
 /*------------------------------
 Navbar Matilde
 ------------------------------*/
@@ -239,15 +260,7 @@ Inner Servimos
 	width: 50%;
 }
 
-/*------------------------------
-Lista de Trabajos
-------------------------------*/
-.como-ayudamos-list > h2{
-	font-family: 'Raleway-Light';
-    /*font-family: 'Raleway', sans-serif;*/
-	font-size: 22px;
-	font-weight: 600;
-}
+
 
 
 /*------------------------------
@@ -332,7 +345,7 @@ FlexSlider
 
 
 
-.flexslider .slides .grafico {
+.flexslider .slides .grafico{
     width: 100%;
     display: block; 
 }
@@ -340,13 +353,6 @@ FlexSlider
 
 .slides li a{
     margin-left: auto;
-}
-
-.ir a{
-    /*font-family: Raleway-Medium;*/
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
-    text-decoration: none;
 }
 
 .enlace-turquesa, .enlace-turquesa:visited{
@@ -593,20 +599,6 @@ textarea {
     text-decoration: none;
 }
 
-.contacto img{
-    display: block;
-    margin-left: auto;
-}
-
-.facebook img{
-    display: block;
-    margin: 0 auto;
-}
-
-.instagram img{
-    display: block;
-    margin-right: auto;
-}
 
 /*------------------------------
 Media Query
@@ -653,9 +645,6 @@ Home Selector
         margin-top: 100%;
     }
 
-    .inner-image{
-        margin-top: 40%;
-    }   
 
     .menu-matilde{
         background-color: #fff;
@@ -670,7 +659,7 @@ Inner Image
     }
 
     .inner-image{
-        margin-top: 10%;
+        margin-top: 100%;
     }
 
     .inner-flecha {
@@ -710,11 +699,52 @@ Hola
         text-align: center;
     }
 
+ 
     .hola-p{
         font-family: 'Raleway', sans-serif;
-        font-size: 22px;
+        font-size: 18px;
         line-height: 110%;
     }
+
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 17px;
+        font-weight: 600;
+    }
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+     .ir{
+       padding: 0 5%;
+    }
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin: 0 auto;
+    }   
 }
 
 @media screen and (max-width: 480px) and (orientation: landscape) {
@@ -739,6 +769,7 @@ Hola
 
     .inner-image{
         max-width: 50%;
+        margin-top: 50%;
     }
 
     .menu-matilde{
@@ -753,10 +784,57 @@ Hola
         text-align: center;
     }
 
+
     .hola-p{
         font-family: 'Raleway', sans-serif;
-        font-size: 22px;
+        font-size: 18px;
         line-height: 110%;
+    }
+
+
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .grafico, .web{
+        width: 100%;
+    }
+
+    .ir{
+       padding: 0 5%;
+    }
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -810,7 +888,7 @@ Inner Image
     }
 
     .inner-image{
-        margin-top: 10%;
+        margin-top: 100%;
     }
 
     .inner-flecha {
@@ -850,11 +928,57 @@ Hola
         text-align: center;
     }
 
+    .hola-container{
+        margin-top: 20%;
+    }
+
     .hola-p{
         font-family: 'Raleway', sans-serif;
-        font-size: 22px;
+        font-size: 18px;
         /*padding: 1% 20%;*/
         line-height: 110%;
+    }
+
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .ir{
+       padding: 0 5%;
+    }
+
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -885,11 +1009,13 @@ Hola
     
     .inner-image{
         max-width: 50%;
-        margin-top: 0;
+        margin-top: 30%;
     }   
 
 
-
+    .grafico, .web{
+        width: 100%;
+    }
 /*------------------------------
 Inner Image
 ------------------------------*/
@@ -933,12 +1059,58 @@ Hola
         text-align: center;
     }
 
+    .hola-container{
+        margin-top: 20%;
+    }
+
     .hola-p{
         font-family: 'Raleway', sans-serif;
-        font-size: 22px;
+        font-size: 18px;
         /*padding: 1% 20%;*/
         line-height: 110%;
     }
+
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .ir{
+       padding: 0 5%;
+    }
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin: 0 auto;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 989px) and (orientation: portrait) {
@@ -969,10 +1141,10 @@ Home Selector
 /*------------------------------
 Nav
 ------------------------------*/
-    .navbar-right {
-        float: right!important;
-        margin-right: 0;
-    }
+.navbar-right {
+    float: right!important;
+    margin-right: 0;
+}
 
 
 /*------------------------------
@@ -1032,6 +1204,42 @@ Hola
         padding: 1% 20%;
         line-height: 110%;
         /*font-weight: 600;*/
+    }
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 22px;
+        font-weight: 600;
+    }
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin-left: auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin-right: auto;
+    }
+
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
     }
 
 }
@@ -1100,6 +1308,45 @@ Hola
         line-height: 110%;
         /*font-weight: 600;*/
     }
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin-left: auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin-right: auto;
+    }
+
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+
 }
 
 
@@ -1192,6 +1439,43 @@ Hola
         /*font-weight: 600;*/
     }
 
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin-left: auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin-right: auto;
+    }
 
 }
 
@@ -1240,6 +1524,44 @@ Hola
         padding: 1% 20%;
         line-height: 110%;
         /*font-weight: 600;*/
+    }
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin-left: auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin-right: auto;
     }
 
 }
@@ -1333,6 +1655,44 @@ Hola
         padding: 1% 20%;
         line-height: 110%;
         /*font-weight: 600;*/
+    }
+
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin-left: auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin-right: auto;
     }
 
 }
@@ -1437,6 +1797,43 @@ Hola
         /*font-weight: 600;*/
     }
 
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin-left: auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin-right: auto;
+    }
 
 }
 
@@ -1537,6 +1934,44 @@ Hola
         line-height: 110%;
         /*font-weight: 600;*/
     }
+
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 22px;
+        font-weight: 600;
+    }
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin-left: auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin-right: auto;
+    }
+
 }
 
 
@@ -1630,6 +2065,44 @@ Hola
         padding: 1% 25%;
         line-height: 110%;
         /*font-weight: 600;*/
+    }
+
+/*------------------------------
+Lista de Trabajos
+------------------------------*/
+    .como-ayudamos-list > h2{
+        font-family: 'Raleway-Light';
+        /*font-family: 'Raleway', sans-serif;*/
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+/*------------------------------
+Enlace
+------------------------------*/
+    .ir a{
+        /*font-family: Raleway-Medium;*/
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+/*------------------------------
+Formulario - Contacto
+------------------------------*/
+    .contacto img{
+        display: block;
+        margin-left: auto;
+    }
+
+    .facebook img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .instagram img{
+        display: block;
+        margin-right: auto;
     }
 
 }

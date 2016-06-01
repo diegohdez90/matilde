@@ -5,11 +5,16 @@
 
 
 
-  var removeHome = function (color) {
+  var removeHome = function (color,mobile) {
 
     switch(color) {
       case 1:
+      if(mobile==-1){
          $('#inicio').parallax({imageSrc:'img/portada_turquesa.jpg'});
+      }else
+      {
+         $('#inicio').parallax({imageSrc:'img/portada_turquesa.jpg',positionX: '-200%'});
+      }
 
 			$('.inner-image').attr('src','img/logo-solo.png');
 			$('.inner-image-flecha').attr('src','img/flecha-abajo-amarino.png');//
@@ -276,96 +281,98 @@
 
 $(document).ready(function(){
 
+if($(window).width()>640){
 
-	var positionSelectColor = $('#page-top').offset();
-	var positionInicio = $('#inicio').offset();
-	var positionHola = $('#hola').offset();
-	var positionAyuda = $('#como-ayudamos').offset();
-	var positionAmamos = $('#amamos-lo-que-hacemos').offset();
-	var positionGrito = $('#echanos-un-grito').offset();
-
-
-	var c = loadPortada();
-
-	removeHome(c);
-
-	var primeravez;
-
-	primeravez = loadCarga();
+  $('.responsive, .contact-mobile, .hola-mobile').remove();
+  var positionSelectColor = $('#page-top').offset();
+  var positionInicio = $('#inicio').offset();
+  var positionHola = $('#hola').offset();
+  var positionAyuda = $('#como-ayudamos').offset();
+  var positionAmamos = $('#amamos-lo-que-hacemos').offset();
+  var positionGrito = $('#echanos-un-grito').offset();
 
 
-	if(primeravez==1){
-		$(window).on('beforeunload', function() {
-	    	$(window).scrollTop(0);
-		});
-	}else{
-		$(window).ready(function() {
-			$('html, body').animate({
-	        scrollTop: $("#inicio").offset().top}, 2000);
-		});
+  var c = loadPortada();
+
+  removeHome(c);
+
+  var primeravez;
+
+  primeravez = loadCarga();
+
+
+  if(primeravez==1){
+    $(window).on('beforeunload', function() {
+        $(window).scrollTop(0);
+    });
+  }else{
+    $(window).ready(function() {
+      $('html, body').animate({
+          scrollTop: $("#inicio").offset().top}, 2000);
+    });
     removeCarga();
-	}
+  }
 
 
 
 
 
     if(c==1){
-    	$('#inicio').parallax({imageSrc:'img/portada-turquesa.jpg'});
-    	$('#como-ayudamos').parallax({imageSrc:'img/servimos_turquesa.jpg'});
-    	$('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_turquesa.jpg'});
-    	$('#echanos-un-grito').parallax({imageSrc:'img/grito_turquesa.jpg'})
+      $('#inicio').parallax({imageSrc:'img/portada-turquesa.jpg'});
+      $('#como-ayudamos').parallax({imageSrc:'img/servimos_turquesa.jpg'});
+      $('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_turquesa.jpg'});
+      $('#echanos-un-grito').parallax({imageSrc:'img/grito_turquesa.jpg'})
     }
 
     if(c==2){
-    	$('#inicio').parallax({imageSrc:'img/portada-verde.jpg'});
-    	$('#como-ayudamos').parallax({imageSrc:'img/servimos_verde.jpg'});
-    	$('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_verde.jpg'});
-    	$('#echanos-un-grito').parallax({imageSrc:'img/grito_verde.jpg'})
+      $('#inicio').parallax({imageSrc:'img/portada-verde.jpg'});
+      $('#como-ayudamos').parallax({imageSrc:'img/servimos_verde.jpg'});
+      $('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_verde.jpg'});
+      $('#echanos-un-grito').parallax({imageSrc:'img/grito_verde.jpg'})
     }
 
     if(c==3){
-    	$('#inicio').parallax({imageSrc:'img/portada-amarillo.jpg'});
-    	$('#como-ayudamos').parallax({imageSrc:'img/servimos_amarillo.jpg'});
-    	$('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_amarillo.jpg'});
-    	$('#echanos-un-grito').parallax({imageSrc:'img/grito_amarillo.jpg'})
+      $('#inicio').parallax({imageSrc:'img/portada-amarillo.jpg'});
+      $('#como-ayudamos').parallax({imageSrc:'img/servimos_amarillo.jpg'});
+      $('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_amarillo.jpg'});
+      $('#echanos-un-grito').parallax({imageSrc:'img/grito_amarillo.jpg'})
     }
 
     if(c==4){
-    	$('#inicio').parallax({imageSrc:'img/portada-rosa.jpg'});
-    	$('#como-ayudamos').parallax({imageSrc:'img/servimos_rosa.jpg'});
-    	$('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_rosa.jpg'});
-    	$('#echanos-un-grito').parallax({imageSrc:'img/grito_rosa.jpg'})
+      $('#inicio').parallax({imageSrc:'img/portada-rosa.jpg'});
+      $('#como-ayudamos').parallax({imageSrc:'img/servimos_rosa.jpg'});
+      $('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_rosa.jpg'});
+      $('#echanos-un-grito').parallax({imageSrc:'img/grito_rosa.jpg'})
     }
 
     if(c==5){
-    	$('#inicio').parallax({imageSrc:'img/portada-naranja.jpg'});
-    	$('#como-ayudamos').parallax({imageSrc:'img/servimos_naranja.jpg'});
-    	$('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_naranja.jpg'});
-    	$('#echanos-un-grito').parallax({imageSrc:'img/grito_naranja.jpg'})
+      $('#inicio').parallax({imageSrc:'img/portada-naranja.jpg'});
+      $('#como-ayudamos').parallax({imageSrc:'img/servimos_naranja.jpg'});
+      $('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_naranja.jpg'});
+      $('#echanos-un-grito').parallax({imageSrc:'img/grito_naranja.jpg'})
     }
 
 
 
 
-	$('.flexslider').flexslider({
-		controlNav: false,
-		slideshow: false,
-		keyboard: false
-	});
+  $('.flexslider').flexslider({
+    controlNav: false,
+    slideshow: false,
+    keyboard: false
+  });
 
-	$('#parallax-nav').hide();
+  $('#parallax-nav').hide();
 
 
 
-	 $(window).scroll(function(){
+   $(window).scroll(function(){
         /*if($(document).scrollTop()>=positionSelectColor.top&&$(document).scrollTop()<positionInicio.top){
-        	$('#parallax-nav-item-seleccion').parent().children('li').removeClass('active');
-        	$('#parallax-nav-item-seleccion').addClass('active');
+          $('#parallax-nav-item-seleccion').parent().children('li').removeClass('active');
+          $('#parallax-nav-item-seleccion').addClass('active');
         }
         if($(document).scrollTop()>=positionInicio.top-1&&$(document).scrollTop()<positionHola.top){
-			$('#parallax-nav-item-inicio').parent().children('li').removeClass('active');
-			$('#parallax-nav-item-inicio').addClass('active');
+      $('#parallax-nav-item-inicio').parent().children('li').removeClass('active');
+      $('#parallax-nav-item-inicio').addClass('active');
         }*/
         if($(document).scrollTop()>=positionSelectColor.top&&$(document).scrollTop()<positionInicio.top){
             $('#parallax-nav').hide();
@@ -399,40 +406,40 @@ $(document).ready(function(){
 
     });
 
-	$('#parallax-nav-item-seleccion').click(function(){
-		$(this).parent().children('li').removeClass('active');
-		$(this).addClass('active');
-	});
+  $('#parallax-nav-item-seleccion').click(function(){
+    $(this).parent().children('li').removeClass('active');
+    $(this).addClass('active');
+  });
 
-	$('#parallax-nav-item-inicio').click(function(){
-		$(this).parent().children('li').removeClass('active');
-		$(this).addClass('active');
-	});
-	
-	$('#parallax-nav-item-hola').click(function(){
-		$(this).parent().children('li').removeClass('active');
-		$(this).addClass('active');
-	});
+  $('#parallax-nav-item-inicio').click(function(){
+    $(this).parent().children('li').removeClass('active');
+    $(this).addClass('active');
+  });
+  
+  $('#parallax-nav-item-hola').click(function(){
+    $(this).parent().children('li').removeClass('active');
+    $(this).addClass('active');
+  });
 
-	$('#parallax-nav-item-ayuda').click(function(){
-		$(this).parent().children('li').removeClass('active');
-		$(this).addClass('active');
-	});
+  $('#parallax-nav-item-ayuda').click(function(){
+    $(this).parent().children('li').removeClass('active');
+    $(this).addClass('active');
+  });
 
-	$('#parallax-nav-item-hacemos').click(function(){
-		$(this).parent().children('li').removeClass('active');
-		$(this).addClass('active');
-	});
+  $('#parallax-nav-item-hacemos').click(function(){
+    $(this).parent().children('li').removeClass('active');
+    $(this).addClass('active');
+  });
 
-	$('#parallax-nav-item-grito').click(function(){
-		$(this).parent().children('li').removeClass('active');		
-		$(this).addClass('active');
-	});
+  $('#parallax-nav-item-grito').click(function(){
+    $(this).parent().children('li').removeClass('active');    
+    $(this).addClass('active');
+  });
 
-	$('.filter-grafico').click(function () {
-		
-		//if ($('.filter-grafico').parent().hasClass('turquesa-gallery')) {
-			$('.gallery').empty().append('<div class="flexslider grafico">'+
+  $('.filter-grafico').click(function () {
+    
+    //if ($('.filter-grafico').parent().hasClass('turquesa-gallery')) {
+      $('.gallery').empty().append('<div class="flexslider grafico">'+
                             '<ul class="slides">'+
                                 '<li ><img class="grafico" src="img/grafico1.jpg" alt="grafico1"></li>'+
                                 '<li ><img class="grafico" src="img/grafico2.jpg" alt="grafico2"></li>'+
@@ -442,41 +449,41 @@ $(document).ready(function(){
                                 '<li ><img class="grafico" src="img/grafico6.jpg" alt="grafico6"></li>'+
                             '</ul>'+
                         '<ul class="flex-direction-nav"><li class="fxEmbossBtn prev_btn"> <a class="btn_icon prev" href="#!"></a> <span class="btn_hover"></span> </li><li class="fxEmbossBtn next_btn"> <a class="btn_icon next" href="#!"></a> <span class="btn_hover"></span> </li></ul>'+
-                      	'<ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a></li><li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li></ul>'+
+                        '<ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a></li><li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li></ul>'+
                       '</div>');
-			if ($('.filter-grafico').parent().hasClass('turquesa-gallery')) {
-				$('.flex-direction-nav a').addClass('turquesa-arrow');
-			};
-			if ($('.filter-grafico').parent().hasClass('green-gallery')) {
-				$('.flex-direction-nav a').addClass('green-arrow');
-			};
-			if ($('.filter-grafico').parent().hasClass('yellow-gallery')) {
-				$('.flex-direction-nav a').addClass('yellow-arrow');
-			};
-			if ($('.filter-grafico').parent().hasClass('pink-gallery')) {
-				$('.flex-direction-nav a').addClass('pink-arrow');
-			};
-			if ($('.filter-grafico').parent().hasClass('orange-gallery')) {
-				$('.flex-direction-nav a').addClass('orange-arrow');
-			};
-			
-		//};
+      if ($('.filter-grafico').parent().hasClass('turquesa-gallery')) {
+        $('.flex-direction-nav a').addClass('turquesa-arrow');
+      };
+      if ($('.filter-grafico').parent().hasClass('green-gallery')) {
+        $('.flex-direction-nav a').addClass('green-arrow');
+      };
+      if ($('.filter-grafico').parent().hasClass('yellow-gallery')) {
+        $('.flex-direction-nav a').addClass('yellow-arrow');
+      };
+      if ($('.filter-grafico').parent().hasClass('pink-gallery')) {
+        $('.flex-direction-nav a').addClass('pink-arrow');
+      };
+      if ($('.filter-grafico').parent().hasClass('orange-gallery')) {
+        $('.flex-direction-nav a').addClass('orange-arrow');
+      };
+      
+    //};
 
 
-		$('.grafico').flexslider({
-			controlNav: false,
-			slideshow: false,
-			keyboard: false
-		});
-		$(this).parent().parent().find('.col-lg-1').children().removeClass('active');
-		$('.ir').removeClass('flex-caption')
-		$(this).addClass('active');
-	});
+    $('.grafico').flexslider({
+      controlNav: false,
+      slideshow: false,
+      keyboard: false
+    });
+    $(this).parent().parent().find('.col-lg-1').children().removeClass('active');
+    $('.ir').removeClass('flex-caption')
+    $(this).addClass('active');
+  });
 
 
-	$('.filter-web').click(function(){
-		var h = $('.gallery').height();
-		$('.gallery').empty().append('<div class="flexslider web">'+
+  $('.filter-web').click(function(){
+    var h = $('.gallery').height();
+    $('.gallery').empty().append('<div class="flexslider web">'+
                             '<ul class="slides"> '+
                                 '<li><img class="" src="img/web1.jpg" alt="web1"><p class="text-right ir"><a target="_blank" href="http://bordapardinas.com/">échale un vistazo</a></p></li>'+
                                 '<li><img class="" src="img/web2.jpg" alt="web2"><p class="text-right ir"><a target="_blank" href="http://bordapardinas.com/">échale un vistazo</a></p></li>'+
@@ -498,39 +505,108 @@ $(document).ready(function(){
                                 '<li><img class="" src="img/web18.jpg" alt="web18"><p class="text-right ir"><a target="_blank" href="http://grupociima.com/ciimasustentable.html">échale un vistazo</a></p></li>'+                            
                               '</ul>'+
                         '<ul class="flex-direction-nav"><li class="fxEmbossBtn prev_btn"> <a class="btn_icon prev" href="#!"></a> <span class="btn_hover"></span> </li><li class="fxEmbossBtn next_btn"> <a class="btn_icon next" href="#!"></a> <span class="btn_hover"></span> </li></ul>'+
-                    	'<ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a></li><li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li></ul>'+  
-                  	'</div> ');
-		if ($('.filter-web').parent().hasClass('turquesa-gallery')) {
-			$('.flex-direction-nav a').addClass('turquesa-arrow');			
-				$('.ir a').removeClass('enlace-green enlace-yellow enlace-pink enlace-orange').addClass('enlace-turquesa');		
-		};
-		if ($('.filter-web').parent().hasClass('green-gallery')) {
-			$('.flex-direction-nav a').addClass('green-arrow');			
-			$('.ir a').removeClass('enlace-turquesa enlace-yellow enlace-pink enlace-orange').addClass('enlace-green');
-		};
-		if ($('.filter-web').parent().hasClass('yellow-gallery')) {
-			$('.flex-direction-nav a').addClass('yellow-arrow');			
-			$('.ir a').removeClass('enlace-turquesa enlace-green enlace-pink enlace-orange').addClass('enlace-yellow');
-		};
-		if ($('.filter-web').parent().hasClass('pink-gallery')) {
-			$('.flex-direction-nav a').addClass('pink-arrow');			
-			$('.ir a').removeClass('enlace-turquesa enlace-green enlace-yellow enlace-orange').addClass('enlace-pink');
-		};
-		if ($('.filter-web').parent().hasClass('orange-gallery')) {
-			$('.flex-direction-nav a').addClass('orange-arrow');			
-			$('.ir a').removeClass('enlace-turquesa enlace-green enlace-yellow enlace-pink').addClass('enlace-orange');
-		};
-		$('.web').flexslider({
-			controlNav: false,
-			slideshow: false,
-			keyboard: false
-		});
-		$(this).parent().parent().find('.col-lg-1').children().removeClass('active');
-		$('.ir').addClass('flex-caption').removeClass('text-right');
-		$(this).addClass('active');
-		$('.gallery').height(h);
-	});
+                      '<ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a></li><li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li></ul>'+  
+                    '</div> ');
+    if ($('.filter-web').parent().hasClass('turquesa-gallery')) {
+      $('.flex-direction-nav a').addClass('turquesa-arrow');      
+        $('.ir a').removeClass('enlace-green enlace-yellow enlace-pink enlace-orange').addClass('enlace-turquesa');   
+    };
+    if ($('.filter-web').parent().hasClass('green-gallery')) {
+      $('.flex-direction-nav a').addClass('green-arrow');     
+      $('.ir a').removeClass('enlace-turquesa enlace-yellow enlace-pink enlace-orange').addClass('enlace-green');
+    };
+    if ($('.filter-web').parent().hasClass('yellow-gallery')) {
+      $('.flex-direction-nav a').addClass('yellow-arrow');      
+      $('.ir a').removeClass('enlace-turquesa enlace-green enlace-pink enlace-orange').addClass('enlace-yellow');
+    };
+    if ($('.filter-web').parent().hasClass('pink-gallery')) {
+      $('.flex-direction-nav a').addClass('pink-arrow');      
+      $('.ir a').removeClass('enlace-turquesa enlace-green enlace-yellow enlace-orange').addClass('enlace-pink');
+    };
+    if ($('.filter-web').parent().hasClass('orange-gallery')) {
+      $('.flex-direction-nav a').addClass('orange-arrow');      
+      $('.ir a').removeClass('enlace-turquesa enlace-green enlace-yellow enlace-pink').addClass('enlace-orange');
+    };
+    $('.web').flexslider({
+      controlNav: false,
+      slideshow: false,
+      keyboard: false
+    });
+    $(this).parent().parent().find('.col-lg-1').children().removeClass('active');
+    $('.ir').addClass('flex-caption').removeClass('text-right');
+    $(this).addClass('active');
+    $('.gallery').height(h);
+  });
 
+
+}
+else{
+  $(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+  });
+  $('#home, #parallax-nav').remove();
+  $('#como-ayudamos').parallax({imageSrc:'img/servimos_turquesa.jpg'});
+  $('#amamos-lo-que-hacemos').parallax({imageSrc:'img/amamos_turquesa.jpg'});
+  $('#echanos-un-grito').parallax({imageSrc:'img/grito_turquesa.jpg'})
+
+  $('.navbar-desktop').remove();
+  $('.gellery-works').remove();
+  $('.contact').remove();
+  $('.hola-desktop').remove();
+  $('.gallery').empty();
+
+  $('.gallery').append('<img class="grafico" src="img/grafico1.jpg" alt="grafico1">'+
+                        '<img class="grafico" src="img/grafico2.jpg" alt="grafico2">'+
+                        '<img class="grafico" src="img/grafico3.jpg" alt="grafico3">'+
+                        '<img class="grafico" src="img/grafico4.jpg" alt="grafico4">'+
+                        '<img class="grafico" src="img/grafico5.jpg" alt="grafico5">'+
+                        '<img class="grafico" src="img/grafico6.jpg" alt="grafico6">'+
+                        '<img class="web" src="img/web1.jpg" alt="web1">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://bordapardinas.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web2.jpg" alt="web2">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://bordapardinas.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web3.jpg" alt="web3">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://bordapardinas.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web4.jpg" alt="web4">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://arteymaterial.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web5.jpg" alt="web5">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://arteymaterial.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web6.jpg" alt="web6">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://arteymaterial.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web7.jpg" alt="web7">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://cofee-fer.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web8.jpg" alt="web8">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://cofee-fer.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web9.jpg" alt="web9">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://cofee-fer.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web10.jpg" alt="web10">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://cubo-b.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web11.jpg" alt="web11">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://cubo-b.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web12.jpg" alt="web12">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://cubo-b.com/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web13.jpg" alt="web13">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://creativeriasocial.org/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web14.jpg" alt="web14">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://creativeriasocial.org/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web15.jpg" alt="web15">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://creativeriasocial.org/">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web16.jpg" alt="web16">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://grupociima.com/ciimasustentable.html">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web17.jpg" alt="web17">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://grupociima.com/ciimasustentable.html">échale un vistazo</a></p>'+
+                        '<img class="web" src="img/web18.jpg" alt="web18">'+
+                        '<p class="text-right ir"><a target="_blank" href="http://grupociima.com/ciimasustentable.html">échale un vistazo</a></p>');
+  if($(window).width()<600){
+    removeHome(1,1)    
+  }
+  else{
+    removeHome(1,-1)
+  }
+
+
+
+}
 
 
 

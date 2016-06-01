@@ -25,7 +25,8 @@
   <script type="text/javascript" src="js/main.js"></script>
   
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!--data-target=".navbar-fixed-top"-->
+<body id="page-top" data-spy="scroll" >
 
 
     <div id="home">
@@ -63,10 +64,40 @@
             </ul>
           </nav>  
 
-          <!--data-image-src="img/portada_turquesa.jpg"-->
-          <!--parallax-window-->
+          <nav class="responsive navbar navbar-default navbar-fixed-top"  role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-matilde-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-matilde-collapse navbar-right" aria-expanded="false">
+                    <ul class="nav navbar-nav menu-matilde">
+                        <li class="hidden">
+                            <a data-toggle="collapse" class="page-scroll" href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" class="page-scroll" href="#hola">¡Hola!</a>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" class="page-scroll" href="#como-ayudamos">¿Cómo te ayudamos?</a>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" class="page-scroll" href="#amamos-lo-que-hacemos">Amamos lo que hacemos</a>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" class="page-scroll" href="#echanos-un-grito">Échanos un grito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
       <div id="inicio" data-parallax="scroll">
-        <nav class="navbar navbar-default"  role="navigation">
+        <nav class="navbar-desktop navbar navbar-default"  role="navigation">
             <!--<div class="container">-->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-matilde-collapse">
@@ -120,13 +151,19 @@
     
     <!-- Intro Section -->
     <section id="hola" class="hola-section">
-        <div class="container">
+        <div class="container hola-container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 hola-desktop">
                     <img class="hola-image" alt="Hola">
                     <p class="hola-p">Somos un estudio de diseño y comunicación visual <br>donde conjugamos como equipo, nuestras <br>mejores cualidades creativas.</p>
                     <p class="hola-p">Cada día comprobamos más que trabajamos <br>en lo que más nos gusta hacer... el diseño.</p>
                     <p class="hola-p">Nos esforzamos por dar un servicio <br>rápido, conciso y con atención personalizada. <br>Dando resultados creativos y originales, <br>logrando hacer de esto la mejor de las experiencias.</p>
+                </div>
+                <div class="col-lg-12 hola-mobile">
+                    <img class="hola-image" alt="Hola">
+                    <p class="hola-p">Somos un estudio de diseño y comunicación visual donde conjugamos como equipo, nuestras mejores cualidades creativas.</p>
+                    <p class="hola-p">Cada día comprobamos más que trabajamos en lo que más nos gusta hacer... el diseño.
+                    <p class="hola-p">Nos esforzamos por dar un servicio rápido, conciso y con atención personalizada. Dando resultados creativos y originales, logrando hacer de esto la mejor de las experiencias.</p>
                 </div>
             </div>
         </div>
@@ -185,13 +222,13 @@
     </div> 
     <section id="trabajos-realizados" class="amamos-lo-que-hacemos-section">
         <div class="container">
-            <div class="row">
+            <div class="row gellery-works">
               <div class="col-lg-10 col-md-10"></div>
               <div class="col-lg-1 col-md-1"><span class="filter filter-grafico active">Gráfico</span></div>
               <div class="col-lg-1 col-md-1"><span class="filter filter-web">Web</span></div>
             </div>
 
-            <div class="row">
+            <div class="row row-gallery">
                 <div class="col-lg-12 gallery">
 
                       <div class="flexslider grafico">
@@ -247,10 +284,19 @@
             </div>
             <div class="row">
             </div>
-            <div class="row">
+            <div class="row contact">
               <div class="col-lg-4 col-md-4 col-xs-4 contacto"></div>
               <div class="col-lg-4 col-md-4 col-xs-4 facebook"></div>
               <div class="col-lg-4 col-md-4 col-xs-4 instagram"></div>
+            </div>
+            <div class="row contact-mobile">
+              <div class="col-xs-12 col-sm-12 contacto"></div>
+            </div>
+            <div class="row contact-mobile">
+              <div class="col-xs-12 col-sm-12 facebook"></div>
+            </div>
+            <div class="row contact-mobile">
+              <div class="col-xs-12 col-xs-12 instagram"></div>
             </div>
         </div>
     </section>
