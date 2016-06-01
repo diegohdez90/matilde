@@ -563,40 +563,28 @@ else{
                         '<img class="grafico" src="img/grafico6.jpg" alt="grafico6">'+
                         '<img class="web" src="img/web1.jpg" alt="web1">'+
                         '<p class="text-right ir"><a target="_blank" href="http://bordapardinas.com/">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web2.jpg" alt="web2">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://bordapardinas.com/">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web3.jpg" alt="web3">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://bordapardinas.com/">échale un vistazo</a></p>'+
+                        '<img class="web espacio" src="img/web2.jpg" alt="web2">'+
+                        '<img class="web espacio" src="img/web3.jpg" alt="web3">'+
                         '<img class="web" src="img/web4.jpg" alt="web4">'+
                         '<p class="text-right ir"><a target="_blank" href="http://arteymaterial.com/">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web5.jpg" alt="web5">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://arteymaterial.com/">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web6.jpg" alt="web6">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://arteymaterial.com/">échale un vistazo</a></p>'+
+                        '<img class="web espacio" src="img/web5.jpg" alt="web5">'+
+                        '<img class="web espacio" src="img/web6.jpg" alt="web6">'+
                         '<img class="web" src="img/web7.jpg" alt="web7">'+
                         '<p class="text-right ir"><a target="_blank" href="http://cofee-fer.com/">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web8.jpg" alt="web8">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://cofee-fer.com/">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web9.jpg" alt="web9">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://cofee-fer.com/">échale un vistazo</a></p>'+
+                        '<img class="web espacio" src="img/web8.jpg" alt="web8">'+
+                        '<img class="web espacio" src="img/web9.jpg" alt="web9">'+
                         '<img class="web" src="img/web10.jpg" alt="web10">'+
                         '<p class="text-right ir"><a target="_blank" href="http://cubo-b.com/">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web11.jpg" alt="web11">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://cubo-b.com/">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web12.jpg" alt="web12">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://cubo-b.com/">échale un vistazo</a></p>'+
+                        '<img class="web espacio" src="img/web11.jpg" alt="web11">'+
+                        '<img class="web espacio" src="img/web12.jpg" alt="web12">'+
                         '<img class="web" src="img/web13.jpg" alt="web13">'+
                         '<p class="text-right ir"><a target="_blank" href="http://creativeriasocial.org/">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web14.jpg" alt="web14">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://creativeriasocial.org/">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web15.jpg" alt="web15">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://creativeriasocial.org/">échale un vistazo</a></p>'+
+                        '<img class="web espacio" src="img/web14.jpg" alt="web14">'+
+                        '<img class="web espacio" src="img/web15.jpg" alt="web15">'+
                         '<img class="web" src="img/web16.jpg" alt="web16">'+
                         '<p class="text-right ir"><a target="_blank" href="http://grupociima.com/ciimasustentable.html">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web17.jpg" alt="web17">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://grupociima.com/ciimasustentable.html">échale un vistazo</a></p>'+
-                        '<img class="web" src="img/web18.jpg" alt="web18">'+
-                        '<p class="text-right ir"><a target="_blank" href="http://grupociima.com/ciimasustentable.html">échale un vistazo</a></p>');
+                        '<img class="web espacio" src="img/web17.jpg" alt="web17">'+
+                        '<img class="web espacio" src="img/web18.jpg" alt="web18">');
   if($(window).width()<600){
     removeHome(1,1)    
   }
@@ -604,7 +592,9 @@ else{
     removeHome(1,-1)
   }
 
-
+  $('.menu-turquesa').click(function() {
+    $('.navbar-collapse').removeClass('in');
+  });
 
 }
 

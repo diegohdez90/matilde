@@ -718,6 +718,10 @@ Lista de Trabajos
 /*------------------------------
 Enlace
 ------------------------------*/
+    .espacio{
+        margin-bottom: 8%;
+    }
+
     .ir a{
         /*font-family: Raleway-Medium;*/
         font-family: 'Raleway', sans-serif;
@@ -814,6 +818,10 @@ Enlace
 
     .grafico, .web{
         width: 100%;
+    }
+
+    .espacio{
+        margin-bottom: 8%;
     }
 
     .ir{
@@ -952,6 +960,10 @@ Lista de Trabajos
 /*------------------------------
 Enlace
 ------------------------------*/
+    .espacio{
+        margin-bottom: 8%;
+    }
+
     .ir a{
         /*font-family: Raleway-Medium;*/
         font-family: 'Raleway', sans-serif;
@@ -1083,6 +1095,10 @@ Lista de Trabajos
 /*------------------------------
 Enlace
 ------------------------------*/
+    .espacio{
+        margin-bottom: 8%;
+    }
+
     .ir a{
         /*font-family: Raleway-Medium;*/
         font-family: 'Raleway', sans-serif;
