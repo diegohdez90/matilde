@@ -7,6 +7,7 @@ $(document).ready(function() {
         /* declare the variables, var error is the variable that we use on the end
          to determine if there was an error or not */
         var error = false;
+        var msg="Revisa los siguientes campos:<br>";
         var name = $('#nombre').val();  
         var lastname = $('#apellidos').val();     
         var email = $('#email').val();
@@ -27,60 +28,55 @@ $(document).ready(function() {
          email.indexOf('@') which checks if there is @ in the email input field.
          This javascript function will return -1 if no occurence have been found.*/
 
-/*        if (name.length == 0) {
-            var error = true;
-            $('#camposreq').fadeIn(500);        
-            $('#camposreq').hover(function() {             
-            $('#camposreq').fadeOut(500);         
-             });
-        } else {
-            $('#name_error').fadeOut(500);
+        if (name.length == 0) {
+            error = true;
+            msg+="Nombre<br>";
         }
 
-     
+        if (lastname.length == 0) {
+            error = true;
+            msg+="Apellidos<br>";
+        }     
 
         if (email.length == 0 || email.indexOf('@') == '-1') {
-            var error = true;
-             $('#camposreq').fadeIn(500);        
-             $('#camposreq').hover(function() {             
-             $('#camposreq').fadeOut(500);
-            
+            error = true;
+            msg+="Correo Electrónico<br>";
+        }    
 
-             });
-        } else {
-            $('#camposreq').fadeOut(500);               
-        }        
+        if (phone.length == 0) {
+            error = true;
+            msg+="Teléfono<br>";
+        }  
 
-        if (comentarios.length == 0) {
-            var error = true;
-             $('#camposreq').fadeIn(500);        
-             $('#camposreq').hover(function() {             
-             $('#camposreq').fadeOut(500);             
-             });
-
-        } else {
-            $('#camposreq').fadeOut(500);
+        if (message.length == 0) {
+            error = true;
+            msg+="Mensaje<br>";
         }
 
-*/
+
+        if(!error){
 
 
-        $.ajax({
-            type: "POST",
-            url: "send_email.php",
-            data: $("#contact_form").serialize(),
-            success: function(result){
-                bootbox.alert("Se ha enviado correctamente tu informacion", function() {});
-                $("#nombre").val("");
-                $("#apellidos").val("");
-                $("#email").val("");
-                $("#telefono").val("");
-                $("#mensaje").val("");
-            },
-            error: function(result) {
-                bootbox.alert("Error al enviar mensaje, revisa tus campos", function() {});
-            }
-        });
-//        }
+
+            $.ajax({
+                type: "POST",
+                url: "send_email.php",
+                data: $("#contact_form").serialize(),
+                success: function(result){
+                    bootbox.alert("Se ha enviado correctamente tu informacion", function() {});
+                    $("#nombre").val("");
+                    $("#apellidos").val("");
+                    $("#email").val("");
+                    $("#telefono").val("");
+                    $("#mensaje").val("");
+                },
+                error: function(result) {
+                    bootbox.alert("Error al enviar mensaje.", function() {});
+                }
+            });
+        }
+        else{
+            bootbox.alert(msg, function() {});
+        }
     });
 });

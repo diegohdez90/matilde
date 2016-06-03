@@ -20,7 +20,7 @@ else
 	
 	
 	
-	$mensaje = "De:";
+	$mensaje = "De:<br>";
 	$mensaje .= "Nombre: $name ";
 	$mensaje .= "$lastname<br>";
 	$mensaje .= "E-Mail: $email<br>";
@@ -35,7 +35,7 @@ else
 	$headers .= "Reply-To: $email_from\r\n";
 	$headers .= 'MIME-Version: 1.0' . "\r\n" . 'Content-type: text/html; charset=UTF-8' . "\r\n";
 	
-	mail($email_to, "Contacto Matilde", $mensaje, $headers);
+	mail("d.fuentes@sibei.mx", "Contacto Matilde", $mensaje, $headers);
 	/*if (mail($email_to, "Contacto Matilde", $mensaje, $headers)) {
 		echo 'Enviado...'; // we are sending this text to the ajax request telling it that the mail is sent..
 	} else {
