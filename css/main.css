@@ -399,7 +399,7 @@ FlexSlider
     position:absolute;
     left:42.5%;
     right:0;
-    bottom:-3.5%;
+    bottom:-4.5%;
     background:transparent; /* whatever you want */    
     z-index:1;
     padding:5px;
@@ -793,6 +793,39 @@ Hola
         font-family: 'Raleway', sans-serif;
         font-size: 17px;
         line-height: 110%;
+    }
+
+/*------------------------------
+Inner Image
+------------------------------*/
+    .inner-flecha {
+        margin: auto;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .inner-ayudamos{
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .inner-amamos {
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .inner-grito {
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
 
 

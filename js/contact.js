@@ -69,7 +69,7 @@ $(document).ready(function() {
             type: "POST",
             url: "send_email.php",
             data: $("#contact_form").serialize(),
-            success: function(){
+            success: function(result){
                 bootbox.alert("Se ha enviado correctamente tu informacion", function() {});
                 $("#nombre").val("");
                 $("#apellidos").val("");
@@ -77,8 +77,8 @@ $(document).ready(function() {
                 $("#telefono").val("");
                 $("#mensaje").val("");
             },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                bootbox.alert("Error al enivar mensaje, revisa tus campos", function() {});
+            error: function(result) {
+                bootbox.alert("Error al enviar mensaje, revisa tus campos", function() {});
             }
         });
 //        }

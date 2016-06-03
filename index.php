@@ -41,7 +41,7 @@
                 <a href=""> <img class="parallax-naranja" src="img/naranja.jpg" onclick="reloadHome(5);" alt="Naranja"></a>
             </div>
           <div class="col-lg-12 color">
-            <img src="img/color.jpg">
+            <img src="img/ponle-color.jpg">
           </div>
         </div>
       </div>
